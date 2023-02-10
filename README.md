@@ -91,6 +91,51 @@ Teste a função com as seguintes entradas:
 - {-2,-2,-2,-2}
 - {20,10, 30}
 
+### [M2S02] Ex 6 - Listas
+
+Dado a lista de números:
+
+List<Integer> lista = Arrays.asList(1,2,3,4);
+
+Percorra a lista e gere uma nova com o triplo do valor de cada elemento:
+    
+### [M2S02] Ex 7 - Listas
+    
+Dado a lista de nomes:
+
+List<String> nomes = Arrays.asList("kirk", "spock", "scott", "mccoy", "sulu");
+
+a) Percorra a lista usando o operador 'for' clássico, usando uma variável para iterar pelos índices, e imprima no console os valores de cada nome; <br>
+b) Percorra a lista usando o operador 'for-each' usando a forma simplificada, e imprima no console os valores de cada nome; <br>
+c) Percorra a lista usando o operador 'while', e imprima no console os valores de cada nome;
+
+### [M2S02] Ex 8 - Listas
+    
+Localize na lista abaixo e imprima no console a primeira ocorrência de número maior que 50.
+
+List<Integer> numeros = Arrays.asList(0,2,88,56,33,42,67,3,9,0,2);
+    
+### [M2S02] Ex 9 - Estrutura de Repetição
+    
+Antigamente tinha um programa de televisão onde o apresentador chamava alguém da platéia e fazia o seguinte desafio valendo um prêmio: a pessoa tinha que contar até determinado número, por exemplo de 0 a 30, e a cada múltiplo de um número (por exemplo 3) deveria substituir pela palavra "PIN".
+Apesar de parecer fácil, muita gente se enrolava e nao conseguia chegar no final do jogo.
+
+Lembrando que para saber se é múltiplo de um número basta dividi-lo por este número e certificar que o resto da divisão é zero.
+Exemplo: 16 é múltiplo de 4 porque 16 % 4 == 0;
+
+Então, dada o array com a sequência abaixo (de 0 a 30), use a função 'for' para iterar sobre seus elementos e a cada múltiplo de 3 imprimir a palavra 'PIN', ou o próprio número caso contrário.
+
+int[] sequencia = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,
+21,22,23,24,25,26,27,28,29,30};
+    
+### [M2S02] Ex 10 - Estrutura de Repetição
+    
+Um palíndrome (ou palíndromo), segundo o dicionário Houaiss,
+"diz-se de frase ou palavra que se pode ler, indiferentemente, da esquerda para direita ou vice-versa", como por exemplo: osso, ana, radar.
+Ou seja, é uma palavra que quando lida de trás pra frente tem o mesmo significado.
+
+Implemente um código com o que aprendemos até agora que retorne se determinada palavra é um palíndromo.
+    
 ---
 
 # O que é DEVinHouse?
