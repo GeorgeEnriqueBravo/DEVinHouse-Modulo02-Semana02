@@ -1,4 +1,4 @@
-# Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="./src/assets/images/logo-phil.png"/>
+# Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="images/logo-phil.png"/>
 ## Módulo 02 - Semana 02
 
 Eu desenvolvi um projeto `Java` para a elaboração dos 10 exercícios referentes a essa semana. <br>
