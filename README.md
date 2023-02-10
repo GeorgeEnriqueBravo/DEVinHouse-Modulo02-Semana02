@@ -1,4 +1,4 @@
-# Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="images/logo-phil.png"/>
+# Bem vindo à DEVinHouse <img width="180px" alt="Philips" src="ExerciciosM02S02/images/logo-phil.png"/>
 ## Módulo 02 - Semana 02
 
 Eu desenvolvi um projeto `Java` para a elaboração dos 10 exercícios referentes a essa semana. <br>
@@ -15,119 +15,81 @@ Após o download, abra a pasta "ExerciciosM02S02" utilizando o software `Intelli
   
 ---
 
-# Lista de exercícios <img width="75px" alt="Philips" src="./src/assets/images/lista.png"/>
-### [M1S11] Ex 1 - Criando um pipe
+# Lista de exercícios <img width="75px" alt="Philips" src="ExerciciosM02S02/images/lista.png"/>
+### [M2S02] Ex 1 - Acesse elementos de um Array
 
-Com a ajuda do decorator @pipe crie um pipe com o ng g p pipes/captalizePhillips para transformar a primeira letra de cada palavra em maiúscula.
+Implemente um código copiando o array abaixo, e depois imprima no console o valor dos seguintes elementos:
 
-### [M1S11] Ex 2 - Menu
+int[] arr = { 56, 57, 58, 67, 99, 12, 11, 88 };
 
-O exercício consiste em fazer uma navbar, com ajuda do bootstrap ou não, como no exemplo da imagem em anexo para acessar diferentes componentes ou containers html ao clicar em cada uma das opções.
+a) Imprima o valor do primeiro elemento; <br>
+b) Imprima o valor do último elemento; <br>
+c) Imprima o valor do terceiro elemento; <br>
 
-- Depois do fechamento da tag html <navbar> cole o código abaixo:
+### [M2S02] Ex 2 - Acesse elementos de um Array (multidimensional)
+
+Implemente um código copiando o array abaixo, e depois imprima no console o valor dos seguintes elementos:
 
 ```
-<div>
-  <h2>Estou na página de Home</h2>
-  <h2>Estou na página de Preços</h2>
-  <h2>Estou na página de Informações</h2>
-</div>
+double[][] notas = {
+    {10, 8.5, 5.5, 9.5},
+    {8.5, 7, 7.5, 6},
+    {8, 9, 10, 7.5},
+    {9, 9.5, 10, 8}
+};
 ```
     
-- Declare na classe do seu componente uma variável page do tipo string.
-- Com a construção da sua navbar adicione um evento de click em cada uma das opções da navbar e no seu valor diga que a variável page recebe um valor correspondente a aquela página, como se fosse um id. <br>
-Exemplo: levando em conta o exemplo na imagem em anexo, será adicionado um evento de click na palavra Home onde seu valor será page=‘Home’ ( (click)=”page = ‘Home’” ).
-- Já na `<div>` deverá ser adicionada a diretiva ngSwitch passando a variável page como valor.
-- Após isso em cada tag html `<h2>` será adicionada a cláusula ngSwitchcase recebendo o valor correspondente a aquela página. Ex: no segundo h2 ficaria *ngSwitchCase=”’Preços’”.
-- O primeiro h1 deve ser o valor padrão para o ngSwitchDefault.
+a) Imprima o valor da nota do primeiro elemento do terceiro array de notas. <br>
+b) Imprima o valor da nota do segundo elemento do quarto array de notas. <br>
+c) Imprima o valor da soma das quatro primeiras notas de cada array. <br>
 
-### [M1S11] Ex 3 - ngFor
+### [M2S02] Ex 3 - Estrutura de Repetição
 
-Em um projeto angular na classe do seu component declare a variável abaixo.
+Percorra array com estrutura de repetição e faça operações com condicionais:
 
-```
-arrayFotos: any = [
-  {
-    url: "",
-    description:""
-  },
-  {
-    url: "",
-    description:""
-  },
-  {
-    url: "",
-    description:""
-  },
-  {
-    url: "",
-    description:""
-  },
-  {
-    url: "",
-    description:""
-  }
-]
-```
+O array abaixo representa lançamentos na conta bancária do Luke.
+Os valores negativos são débitos e os valores positivos são créditos.
 
-- A variável arrayFotos consiste em um array de objetos com duas propriedades, a url que recebe o caminho da sua foto e a description contendo uma breve descrição da foto.
-- Agora escolha 5 imagens de sua preferência, a url de cada imagem deve ser armazenada dentro da propriedade url e a descrição dentro da description.
-- Já no html do componente faça um card usando classes do css ou bootstrap, o design fica a sua escolha.
-- Com o uso do ngFor repita e mostre cada imagem em um card diferente com a descrição dela abaixo da imagem.
+Implemente um código copiando o array abaixo, e depois imprima no console o que se pede:
 
-### [M1S11] Ex 4 - ngIf
+int[] extrato = { 100, -35, -15, -5, 55, -20 };
 
-Para treinar a diretiva ngIf vamos seguir as instruções abaixo:
+a) Percorra o array (operador 'for') e imprima cada elemento do array na ordem; <br>
+b) Percorra o array (operador 'for') e imprima os elementos de trás pra frente (do último para o primeiro); <br>
+c) Percorra o array (operador 'for') e calcule o saldo final da conta (valor inicial era zero), <br>
+imprima o resultado no console. (Dica: crie uma variável saldo inicializada com zero e vá atualizando seu valor); <br>
+d) Imprima no console a mensagem 'saldo positivo' ou 'saldo negativo', dependendo do resultado do saldo final calculado.
 
-- Inicie um projeto angular e no css do seu componente cole o código do arquivo em anexo.
-- Depois disso adicione no template html do seu componente o código abaixo.
+### [M2S02] Ex 4 - Estrutura de Repetição e Condicionais
+
+Mike tem um nro da sorte: 25. <br>
+Ele conseguiu uma listagem do histórico dos resultados da loteria conforme arrays abaixo. <br>
+Escreva um código para percorrer os elementos de nros sorteados e contabilizar quantas vezes o nro da sorte dele foi sorteado.
+
+- Dica: Usar um for dentro do outro para percorrer os arrays internos.
 
 ```
-<div class="card">
-  <a>Open Demo Modal</a>
-</div>
-
-<div class="modal">
-  <div class="modal__content">
-    <h1>Example modal</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error minima
-      libero veniam, modi corrupti doloremque repellendus vitae mollitia. Ipsum
-      voluptatibus ea ab quos molestiae at expedita maiores dolore a corrupti!
-    </p>
-    <a class="modal__close">&times;</a>
-  </div>
-</div>
+int sorteados[][] = {
+    { 1, 44,  6,  2, 45, 60},
+    {10, 21, 55, 25, 34, 44},
+    { 8, 18, 28, 29, 55, 59},
+    {60, 25, 11, 34,  6,  9},
+    {55, 43, 25, 12,  7, 11}
+};
 ```
 
-- Declare uma variável chamada showModal do tipo boolean na classe do seu componente.
-- Após isso nas duas tags html <a> com a ajuda do evento de click mude a variável para o valor contrário ao valor atual.
-- Já na tag html <div> que possui a classe ‘modal’, adicione a diretiva ngIf para apenas mostrar essa <div> caso a variável for true.
+### [M2S02] Ex 5 - Estrutura de Repetição e Condicionais
 
-### [M1S11] Ex 5 - ng-content
+Implemente uma função 'calcular' que receba como parâmetro um array (numérico) e identifique o maior e menor valor do mesmo. Imprima no console estes valores ou "Não é possível calcular" qdo não for possível.
 
-Utilizando o modal criado no exercício 04, substitua toda a tag HTML <p> por ng-content , chame esse componente em outro local e adicione um parágrafo com lorem ipsum.
+Teste a função com as seguintes entradas:
 
-### [M1S11] Ex 6 - ng-content
-
-Observe a imagem em anexo, crie um componente e recrie um modelo igual ou semelhante a ela, porém o título, o subtítulo e a descrição deverão ser passados através do ng-content. <br>
-Dica: Lembre-se das aulas onde são passados dois tipos de content para o mesmo componente.
-
-### [M1S11] Ex 7 - ngIf e else
-
-Usando um input html crie uma validação para se caso o input estiver com a validação correta apareça uma mensagem com a fonte verde e se caso não estiver correta, aparecer uma mensagem em vermelha. Pode usar a criatividade para a estilização que quiser e para a mensagem também.
-OBS: Utilize ngIf e else (com o uso do ng-template) para trocar as mensagens.
-
-### [M1S11] Ex 8 - Revisão geral
-
-Em um projeto angular e com ajuda do bootstrap monte uma lista de tarefas onde você poderá adicionar itens a partir de um `<input>`, esse `<input>` receberá um ngModel para armazenar a string que será digitada pelo usuário. Feito isso, vamos às observações:
-
-- A variável que carrega a listagem deve ser declarada na classe do componente e inicialmente será vazia.
-- No html do componente deverá ter um `<input>` para cadastrar sua tarefa, um botão para adicionar (tag `<button>`), a listagem (tag `<ul>` e `<li>`) e uma mensagem de aviso para quando a listagem for vazia (tag `<p>`).
-- Ao clicar no botão de salvar item a função que adiciona um item ao array deverá ser ativada para adicionar esse item digitado ao array de strings ( .push ).
-- O container que carregará a listagem apenas se tornará visível quando estiver com no mínimo 1 item no array de tarefas.
-- Deverá ser apresentada uma mensagem de aviso para quando o array estiver vazio. Faça isso com ajuda no ngIf.
-- A listagem será processada em um ngFor e com isso no container que será repetido irá imprimir cada item do array.
+- {56, 65, 64, -3, 23, 42, -15, 65, 14, 32, 78, 70, 47}
+- {1}
+- {1, -1}
+- null
+- {-2,-2,-2,-2}
+- {20,10, 30}
 
 ---
 
@@ -143,7 +105,7 @@ __Ferramentas__ – GitHub, Trello e Slack
 
 ---
 
-# Tecnologias Utilizadas <img width="35px" alt="🌐" src="./src/assets/images/tag.gif"/>
+# Tecnologias Utilizadas <img width="35px" alt="🌐" src="ExerciciosM02S02/images/tag.gif"/>
 Nos exercícios dessa semana foram utilizadas as seguintes tecnologias:
 <div style="display: inline_block">
     <img align="center" alt="Angular" src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white"/>
